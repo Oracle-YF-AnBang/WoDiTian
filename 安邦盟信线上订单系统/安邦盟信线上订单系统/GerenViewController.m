@@ -9,13 +9,24 @@
 #import "GerenViewController.h"
 
 @interface GerenViewController ()
-
+{
+    
+    CGFloat width;
+    CGFloat height;
+    
+}
 @end
 
 @implementation GerenViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    width = [UIScreen mainScreen].bounds.size.width;
+    height = [UIScreen mainScreen].bounds.size.height;
+    
+    
+    [self qita];
     [self daohang];
 }
 -(void)daohang{
@@ -50,7 +61,13 @@
 }
 
 
-
+-(void)qita{
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width, height)];
+    view.backgroundColor = [UIColor whiteColor];
+    
+    [self.view addSubview:view];
+}
 
 
 

@@ -9,13 +9,23 @@
 #import "ShezhiViewController.h"
 
 @interface ShezhiViewController ()
-
+{
+    
+    CGFloat width;
+    CGFloat height;
+}
 @end
 
 @implementation ShezhiViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    width = [UIScreen mainScreen].bounds.size.width;
+    height = [UIScreen mainScreen].bounds.size.height;
+    
+    
+    [self qita];
     [self daohang];
 }
 -(void)daohang{
@@ -48,6 +58,17 @@
     NSLog(@"跳跳跳跳跳跳跳");
     
 }
+
+
+-(void)qita{
+    
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, width, height)];
+    view.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self.view addSubview:view];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
