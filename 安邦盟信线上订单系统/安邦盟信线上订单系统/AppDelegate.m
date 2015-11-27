@@ -21,27 +21,27 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//   
-//    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[Chaxun alloc] init]];
-//    ZuoViewController *leftMenuViewController = [[ZuoViewController alloc] init];
-//    YouViewController *rightMenuViewController = [[YouViewController alloc] init];
-//    
-//    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
-//                                                                    leftMenuViewController:leftMenuViewController
-//                                                                   rightMenuViewController:rightMenuViewController];
-//    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"2.png"];
-//    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
-//    sideMenuViewController.delegate = self;
-//    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
-//    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
-//    sideMenuViewController.contentViewShadowOpacity = 0.6;
-//    sideMenuViewController.contentViewShadowRadius = 12;
-//    sideMenuViewController.contentViewShadowEnabled = YES;
-//    self.window.rootViewController = sideMenuViewController;
-//    
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+   
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:[[Chaxun alloc] init]];
+    ZuoViewController *leftMenuViewController = [[ZuoViewController alloc] init];
+    YouViewController *rightMenuViewController = [[YouViewController alloc] init];
+    
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navigationController
+                                                                    leftMenuViewController:leftMenuViewController
+                                                                   rightMenuViewController:rightMenuViewController];
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"2.png"];
+    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+    sideMenuViewController.delegate = self;
+    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideMenuViewController.contentViewShadowOpacity = 0.6;
+    sideMenuViewController.contentViewShadowRadius = 12;
+    sideMenuViewController.contentViewShadowEnabled = YES;
+    self.window.rootViewController = sideMenuViewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

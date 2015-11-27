@@ -83,7 +83,7 @@
     //旧密码textfield
     UITextField *oldtext = [[UITextField alloc]initWithFrame:CGRectMake(130, 61, 150, 30)];
     oldtext.placeholder = @"请输入旧密码";
-    oldtext.keyboardType=UIKeyboardTypeDecimalPad;
+    oldtext.keyboardType=UIKeyboardTypeNumbersAndPunctuation;
     oldtext.font = [UIFont systemFontOfSize:14];
     //线
     UIView *xian = [[UIView alloc]initWithFrame:CGRectMake(130, 88, 150, 1)];
@@ -96,7 +96,7 @@
     //新密码textfield
     UITextField *newtext = [[UITextField alloc]initWithFrame:CGRectMake(130, 101, 150, 30)];
     newtext.placeholder = @"请输入新的密码";
-    newtext.keyboardType=UIKeyboardTypeDecimalPad;
+    newtext.keyboardType=UIKeyboardTypeNumbersAndPunctuation;
     newtext.font = [UIFont systemFontOfSize:14];
     //线
     UIView *xian1 = [[UIView alloc]initWithFrame:CGRectMake(130, 128, 150, 1)];
