@@ -1,10 +1,11 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3521EFEDBE6E50E606DD48AA2A5D17E7C58F4487",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BAEC7FB2F4432B6E4D73074C91664AF7F9FC587E",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "3521EFEDBE6E50E606DD48AA2A5D17E7C58F4487" : 0,
+    "BAEC7FB2F4432B6E4D73074C91664AF7F9FC587E" : 0,
     "45D71AED19FE933017D1DA3C3E3B98E7D9D15352" : 0,
     "771CAB369187CC11697FC263F38C07D8D060BCFD" : 0,
     "DC90A656673B11D63D52767F9E8438BABC66BE30" : 0
@@ -12,6 +13,7 @@
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "DADB5A20-E7E0-4127-A319-61F9A777F30C",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "3521EFEDBE6E50E606DD48AA2A5D17E7C58F4487" : "Oracle_AnBang\/",
+    "BAEC7FB2F4432B6E4D73074C91664AF7F9FC587E" : "WoDiTian\/",
     "45D71AED19FE933017D1DA3C3E3B98E7D9D15352" : "Anbangzongguan\/",
     "771CAB369187CC11697FC263F38C07D8D060BCFD" : "Oracle-AnBang\/",
     "DC90A656673B11D63D52767F9E8438BABC66BE30" : "ZBarSDK\/"
@@ -34,6 +36,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/OracleYF\/Oracle-AnBang.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "771CAB369187CC11697FC263F38C07D8D060BCFD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Oracle-YF-AnBang\/WoDiTian.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BAEC7FB2F4432B6E4D73074C91664AF7F9FC587E"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bmorton\/ZBarSDK.git",
