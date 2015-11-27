@@ -12,6 +12,7 @@
 {
     CGFloat width;
     CGFloat height;
+    UITextField *shu;
 }
 
 @property (weak, nonatomic) IBOutlet UISearchBar *sou;
@@ -90,7 +91,7 @@
     [jian setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [jian setTitle:@"-" forState:UIControlStateNormal];
     [jian addTarget:self action:@selector(jian) forControlEvents:UIControlEventTouchUpInside];
-    UITextField *shu = [[UITextField alloc]initWithFrame:CGRectMake(160, 91, 35, 15)];
+    shu = [[UITextField alloc]initWithFrame:CGRectMake(160, 91, 35, 15)];
     shu.text = @"0";
     shu.textAlignment = UITextAlignmentCenter;
     shu.font = [UIFont systemFontOfSize:12];
@@ -138,6 +139,7 @@
 
 -(void)jian{
     
+    shu.text=[NSString stringWithFormat:@"%d",[shu.text intValue]+5];
     
 }
 

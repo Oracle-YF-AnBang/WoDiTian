@@ -302,6 +302,11 @@
 		D228D8381C083B4100678B5A /* 滑动 */ = {
 			isa = PBXGroup;
 			children = (
+				95CE786A1C07F6790099FD14 /* NavigationController.h */,
+				95CE786B1C07F6790099FD14 /* NavigationController.m */,
+				95BFC5111BFEC11100021E84 /* Denglu.h */,
+				95BFC4E11BFEAB5700021E84 /* AppDelegate.h */,
+				95BFC4E21BFEAB5700021E84 /* AppDelegate.m */,
 				95CE78641C07E9520099FD14 /* ZuoViewController.h */,
 				95CE78651C07E9520099FD14 /* ZuoViewController.m */,
 				95CE78671C07EA9D0099FD14 /* YouViewController.h */,
@@ -445,11 +450,6 @@
 			isa = PBXGroup;
 			children = (
 				D228D8381C083B4100678B5A /* 滑动 */,
-				95CE786A1C07F6790099FD14 /* NavigationController.h */,
-				95CE786B1C07F6790099FD14 /* NavigationController.m */,
-				95BFC4E11BFEAB5700021E84 /* AppDelegate.h */,
-				95BFC4E21BFEAB5700021E84 /* AppDelegate.m */,
-				95BFC5111BFEC11100021E84 /* Denglu.h */,
 				95FA71131C0551CB00538CA0 /* Denglu.m */,
 				95BFC5141BFEC13C00021E84 /* Chaxun.h */,
 				95BFC5151BFEC13C00021E84 /* Chaxun.m */,
