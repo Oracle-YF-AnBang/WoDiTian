@@ -236,6 +236,26 @@
             </objects>
             <point key="canvasLocation" x="15" y="318"/>
         </scene>
+        <!--Zhangdanxiangqing-->
+        <scene sceneID="f7b-R7-Ljd">
+            <objects>
+                <viewController storyboardIdentifier="zhangdan" id="lis-6v-npu" customClass="zhangdanxiangqing" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="638-Mc-d9S"/>
+                        <viewControllerLayoutGuide type="bottom" id="2BW-5S-0F9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I8E-7m-GDt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eeE-on-IEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1099" y="986"/>
+        </scene>
         <!--Shezhi View Controller-->
         <scene sceneID="ge1-Wz-h08">
             <objects>

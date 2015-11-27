@@ -12,14 +12,17 @@
 #import "SBJsonWriter.h"
 #import "MBProgressHUD.h"
 #import "WarningBox.h"
-
+#import "zhangdanxiangqing.h"
 @interface Chaxun ()
 {
     CGFloat width;
     CGFloat height;
     int aniu;
+    int index;
     NSMutableArray*zushu;
     NSMutableArray*hangshu;
+    UISegmentedControl *segmentedControl;
+    UITableViewCell *cell;
 }
 
 @property(strong,nonatomic)UITableView *tableview;
@@ -63,17 +66,15 @@
     view.backgroundColor = [UIColor whiteColor];
     
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"全部订单",@"未审核订单",nil];
-    
+    self.view.userInteractionEnabled=YES;
     //初始化UISegmentedControl
     
-    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
-    
+    segmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     segmentedControl.frame = CGRectMake(0, 72, width, 28);
-    
-    segmentedControl.selectedSegmentIndex = 2;//设置默认选择项索引
-    
+    segmentedControl.selectedSegmentIndex = 0;//设置默认选择项索引
     segmentedControl.tintColor = [UIColor orangeColor];
-    
+    [segmentedControl addTarget:self action:@selector(dianji:) forControlEvents:UIControlEventValueChanged];
+
     self.tableview = [[UITableView alloc]initWithFrame:CGRectMake(0, 105, width, height-105)];
     
     self.tableview.delegate = self;
@@ -90,6 +91,19 @@
 }
 
 
+-(void)dianji:(id)sender{
+     index=(int)segmentedControl.selectedSegmentIndex;
+    if (index==0) {
+        NSLog(@"sabdja");
+        [_tableview reloadData];
+    }else{
+        NSLog(@"刷新");
+        
+        [_tableview reloadData];
+        
+    }
+    
+}
 
 -(void)left{
     UIBarButtonItem *left = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"@2x_127.png"]style:UIBarButtonItemStylePlain target:self action:@selector(presentLeftMenuViewController:)];
@@ -160,7 +174,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *id1 =@"mycell";
     
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath ];
+    cell = [tableView cellForRowAtIndexPath:indexPath ];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:id1];
     }
@@ -195,10 +209,18 @@
     [cell.contentView addSubview:di];
     
     self.tableview.separatorStyle=UITableViewCellAccessoryNone;
-    cell.userInteractionEnabled = NO;
+    if (index==0) {
+         cell.userInteractionEnabled = NO;
+    }
+
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    zhangdanxiangqing*shang=[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"zhangdan"];
+    [self.navigationController pushViewController:shang animated:YES];
+    
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {

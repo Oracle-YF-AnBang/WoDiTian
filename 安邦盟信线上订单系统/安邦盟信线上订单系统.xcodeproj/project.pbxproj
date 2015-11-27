@@ -29,6 +29,7 @@
 		D228D8351C081EF900678B5A /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D228D8301C081EF900678B5A /* RECommonFunctions.m */; };
 		D228D8361C081EF900678B5A /* RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D228D8321C081EF900678B5A /* RESideMenu.m */; };
 		D228D8371C081EF900678B5A /* UIViewController+RESideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = D228D8341C081EF900678B5A /* UIViewController+RESideMenu.m */; };
+		D228D83B1C083EE800678B5A /* zhangdanxiangqing.m in Sources */ = {isa = PBXBuildFile; fileRef = D228D83A1C083EE800678B5A /* zhangdanxiangqing.m */; };
 		D2901B4D1C0539D400FEDE20 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2901B4C1C0539D400FEDE20 /* AVFoundation.framework */; };
 		D2901B4F1C0539ED00FEDE20 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2901B4E1C0539ED00FEDE20 /* CoreMedia.framework */; };
 		D2901B511C0539FD00FEDE20 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2901B501C0539FD00FEDE20 /* CoreVideo.framework */; };
@@ -123,6 +124,8 @@
 		D228D8321C081EF900678B5A /* RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RESideMenu.m; sourceTree = "<group>"; };
 		D228D8331C081EF900678B5A /* UIViewController+RESideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RESideMenu.h"; sourceTree = "<group>"; };
 		D228D8341C081EF900678B5A /* UIViewController+RESideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RESideMenu.m"; sourceTree = "<group>"; };
+		D228D8391C083EE800678B5A /* zhangdanxiangqing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhangdanxiangqing.h; sourceTree = "<group>"; };
+		D228D83A1C083EE800678B5A /* zhangdanxiangqing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhangdanxiangqing.m; sourceTree = "<group>"; };
 		D2901B4C1C0539D400FEDE20 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D2901B4E1C0539ED00FEDE20 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		D2901B501C0539FD00FEDE20 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
@@ -296,6 +299,23 @@
 			path = RESideMenu;
 			sourceTree = "<group>";
 		};
+		D228D8381C083B4100678B5A /* 滑动 */ = {
+			isa = PBXGroup;
+			children = (
+				95CE78641C07E9520099FD14 /* ZuoViewController.h */,
+				95CE78651C07E9520099FD14 /* ZuoViewController.m */,
+				95CE78671C07EA9D0099FD14 /* YouViewController.h */,
+				95CE78681C07EA9D0099FD14 /* YouViewController.m */,
+				95CE786D1C07FA710099FD14 /* XiugaiViewController.h */,
+				95CE786E1C07FA710099FD14 /* XiugaiViewController.m */,
+				95CE78701C07FC610099FD14 /* GerenViewController.h */,
+				95CE78711C07FC610099FD14 /* GerenViewController.m */,
+				95CE78731C07FCA40099FD14 /* ShezhiViewController.h */,
+				95CE78741C07FCA40099FD14 /* ShezhiViewController.m */,
+			);
+			name = "滑动";
+			sourceTree = "<group>";
+		};
 		D2901B541C053A3A00FEDE20 /* 条形码 */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,6 +444,7 @@
 		D2C179FE1C03078100D06B02 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				D228D8381C083B4100678B5A /* 滑动 */,
 				95CE786A1C07F6790099FD14 /* NavigationController.h */,
 				95CE786B1C07F6790099FD14 /* NavigationController.m */,
 				95BFC4E11BFEAB5700021E84 /* AppDelegate.h */,
@@ -432,22 +453,14 @@
 				95FA71131C0551CB00538CA0 /* Denglu.m */,
 				95BFC5141BFEC13C00021E84 /* Chaxun.h */,
 				95BFC5151BFEC13C00021E84 /* Chaxun.m */,
+				D228D8391C083EE800678B5A /* zhangdanxiangqing.h */,
+				D228D83A1C083EE800678B5A /* zhangdanxiangqing.m */,
 				95BFC5171BFEC17700021E84 /* Xiadan.h */,
 				95BFC5181BFEC17700021E84 /* Xiadan.m */,
 				95BFC51A1BFEC1AB00021E84 /* Xuanze.h */,
 				95BFC51B1BFEC1AB00021E84 /* Xuanze.m */,
-				95CE78641C07E9520099FD14 /* ZuoViewController.h */,
-				95CE78651C07E9520099FD14 /* ZuoViewController.m */,
-				95CE78671C07EA9D0099FD14 /* YouViewController.h */,
-				95CE78681C07EA9D0099FD14 /* YouViewController.m */,
 				95CE78761C080CE40099FD14 /* ShangpinxinxiViewController.h */,
 				95CE78771C080CE40099FD14 /* ShangpinxinxiViewController.m */,
-				95CE786D1C07FA710099FD14 /* XiugaiViewController.h */,
-				95CE786E1C07FA710099FD14 /* XiugaiViewController.m */,
-				95CE78701C07FC610099FD14 /* GerenViewController.h */,
-				95CE78711C07FC610099FD14 /* GerenViewController.m */,
-				95CE78731C07FCA40099FD14 /* ShezhiViewController.h */,
-				95CE78741C07FCA40099FD14 /* ShezhiViewController.m */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -609,6 +622,7 @@
 				D2901BB81C05500B00FEDE20 /* AFHTTPRequestOperationManager.m in Sources */,
 				D2901BB91C05500B00FEDE20 /* AFHTTPSessionManager.m in Sources */,
 				D2901BC11C05500B00FEDE20 /* DownloadTask.m in Sources */,
+				D228D83B1C083EE800678B5A /* zhangdanxiangqing.m in Sources */,
 				D2901BB61C05500B00FEDE20 /* MBProgressHUD.m in Sources */,
 				D2901BBE1C05500B00FEDE20 /* AFURLResponseSerialization.m in Sources */,
 				D2901BBD1C05500B00FEDE20 /* AFURLRequestSerialization.m in Sources */,
