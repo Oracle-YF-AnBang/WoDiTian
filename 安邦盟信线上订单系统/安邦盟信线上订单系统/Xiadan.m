@@ -39,6 +39,8 @@
     self.xiaoshi.hidden = YES;
     self.tableView.hidden = YES;
     
+    self.navigationItem.title = @"下单";
+
 }
 
 - (void)didReceiveMemoryWarning {
