@@ -23,12 +23,12 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="NdA-5l-213" kind="relationship" relationship="rootViewController" id="XOO-8n-gFS"/>
+                        <segue destination="NdA-5l-213" kind="relationship" relationship="rootViewController" id="yBw-Sm-IzP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="adg-rv-fqm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1038" y="323"/>
+            <point key="canvasLocation" x="-1086" y="303"/>
         </scene>
         <!--登 录-->
         <scene sceneID="ChN-M2-Tpz">
@@ -91,13 +91,13 @@
                                     <constraint firstAttribute="height" constant="30" id="xJs-W0-7by"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="et9-P1-hUi">
                                 <rect key="frame" x="104" y="187" width="190" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <animations/>
@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jMf-EW-UfJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="318"/>
+            <point key="canvasLocation" x="-673" y="303"/>
         </scene>
         <!--订单查询-->
         <scene sceneID="vqm-wY-Jdz">

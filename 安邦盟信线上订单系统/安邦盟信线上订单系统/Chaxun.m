@@ -12,7 +12,9 @@
 #import "SBJsonWriter.h"
 #import "MBProgressHUD.h"
 #import "WarningBox.h"
-
+#import "ZuoViewController.h"
+#import "YouViewController.h"
+#import "NavigationController.h"
 @interface Chaxun ()
 {
     CGFloat width;
@@ -29,7 +31,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    NavigationController*navi=[[NavigationController alloc] init];
+    ZuoViewController *leftMenuViewController = [[ZuoViewController alloc] init];
+    YouViewController *rightMenuViewController = [[YouViewController alloc] init];
     
+    RESideMenu *sideMenuViewController = [[RESideMenu alloc] initWithContentViewController:navi
+                                                                    leftMenuViewController:leftMenuViewController
+                                                                   rightMenuViewController:rightMenuViewController];
+    sideMenuViewController.backgroundImage = [UIImage imageNamed:@"2.png"];
+    sideMenuViewController.menuPreferredStatusBarStyle = 1; // UIStatusBarStyleLightContent
+    sideMenuViewController.delegate = self;
+    sideMenuViewController.contentViewShadowColor = [UIColor blackColor];
+    sideMenuViewController.contentViewShadowOffset = CGSizeMake(0, 0);
+    sideMenuViewController.contentViewShadowOpacity = 0.6;
+    sideMenuViewController.contentViewShadowRadius = 12;
+    sideMenuViewController.contentViewShadowEnabled = YES;
     width = [UIScreen mainScreen].bounds.size.width;
     height = [UIScreen mainScreen].bounds.size.height;
     //导航栏颜色
@@ -49,6 +65,28 @@
     [self right];
     [self chuanjian];
 }
+
+- (void)sideMenu:(RESideMenu *)sideMenu willShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didShowMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didShowMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu willHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"willHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+- (void)sideMenu:(RESideMenu *)sideMenu didHideMenuViewController:(UIViewController *)menuViewController
+{
+    NSLog(@"didHideMenuViewController: %@", NSStringFromClass([menuViewController class]));
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

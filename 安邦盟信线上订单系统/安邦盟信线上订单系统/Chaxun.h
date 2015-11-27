@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "RESideMenu.h"
 
-@interface Chaxun : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface Chaxun : UIViewController<UITableViewDataSource,UITableViewDelegate,RESideMenuDelegate>
 
 
 
